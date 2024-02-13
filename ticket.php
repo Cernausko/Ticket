@@ -48,6 +48,9 @@ echo <<<HTML
         }
         .right-info {
             padding: 0 20px;
+        }
+        .right-info H2 {
+            padding-top: 28px;
         }          
 
         .title-text {
@@ -92,6 +95,13 @@ echo <<<HTML
             background-color: white;
             padding: 20px;
         }
+        .end{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: white;
+            padding: 20px;
+        }
 
         .time i{
             padding-top: 20px;
@@ -109,11 +119,7 @@ echo <<<HTML
             color: blue;
             align-self: flex-end;
             background-color: white;
-            padding: 10px;
             margin-top: auto;
-        }
-        .note arrow{
-            color: blue;
         }
         .alert{
             color: #78714f;
@@ -167,7 +173,10 @@ echo <<<HTML
                     <span class='from'><p>12:20 Uhr</p>$ikur_skrenda</span>
                     <p>13Std. 30Min., Direct/Nonstop</p>
                 </div>
+                <div class="end">
                 <p class='note'>Bilietas nėra gražinamas daugiau informacijos žemiau<i i class='fas fa-arrow-down down-arrow'></i></p>
+                    <span class='note'>Asmens kodas: $asmens_kodas</span>
+                </div>
             </div>
             <div class="right-info">
                 <h2>Informacija</h2>
